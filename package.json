@@ -1,0 +1,31 @@
+{
+  "name": "remotestorage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd src; parcel index.html",
+    "build": "rm -rf docs; cd src; NODE_ENV=production parcel build index.html --public-url=/fs-remotestorage --out-dir=../docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@websh/web-shell-app": "file:../../packages/web-shell-app",
+    "remotestorage-widget": "^1.5.1",
+    "remotestoragejs": "^1.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "cssnano": "^4.1.10",
+    "parcel-plugin-static-files-copy": "^2.3.1"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
+  ]
+}
